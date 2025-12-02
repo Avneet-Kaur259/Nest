@@ -8,3 +8,29 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+@property --border-angle {
+    inherits: false;
+    initial-value: 0deg;
+    syntax: "<angle>";
+}
+
+.input {
+    @apply w-full bg-stone-800/50 border border-stone-700 rounded-lg py-2 pl-10 pr-4 text-stone-200 placeholder-stone-400 focus:ring-2 focus:ring-stone-500 focus:border-transparent;
+}
+
+.auth-input-icon {
+    @apply absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 size-5;
+}
+
+.auth-input-label {
+    @apply block text-sm font-medium text-stone-300 mb-2;
+}
+
+.auth-btn {
+    @apply w-full bg-stone-700 text-stone-300 border border-stone-800 rounded-lg py-2.5 font-medium hover:bg-stone-700/50 focus:ring-2 focus:ring-stone-500;
+}
+
+.auth-link {
+    @apply px-4 py-2 inline-block bg-stone-500/10 rounded-lg text-stone-400 hover:text-stone-500 text-sm transition-colors;
+}
